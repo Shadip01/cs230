@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 8</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/aura.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand" href="#">Shadip Khadka</p>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Page 1</a></li>
+                <li><a href="secondPage.html">Page 2</a></li>
+                <li><a href="thirdPage.html">Page 3</a></li>
+                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="page5.html">Page 5</a></li>
+                <li><a href="page6.html">Page 6</a></li>
+                <li><a href="page7.html">Page 7</a></li>
+                <li><a href="#">Page 8</a></li>
+                <li><a href="page9.html">Page 9</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <h1>Appointment Confirmation Page</h1>
+        <form>
+            <!-- form for username, password, and email -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="username">Email Address:</label>
+            <input type="text" id="Email" name="Email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <!-- select your gender using radio button -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <!-- select whether you are 18 or above using checkbox  -->
+            <label>Confirm your age:</label>
+            <input type="checkbox" id="checkbox" name="age" value="Above 18">
+            <label for="checkbox">Above 18</label>
+            <input type="checkbox" id="checkbox" name="age" value="under 18">
+            <label for="checkbox">Under 18</label><br><br>
+            <!-- select date using input type date -->
+            <input type="date"><br><br>
+            <!-- select your country using option -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+            <option value="None">None</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="other">Other</option>
+            </select>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Submit"><br><br>
+            <label for="slider"> Rate from 0 - 100</label>
+            <input type="range" id="slider" min="0" max="200" value="100"><br><br>
+            <textarea placeholder="Type your feedback"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>

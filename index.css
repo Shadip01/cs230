@@ -1,0 +1,221 @@
+        body {
+            background-color: gray;
+        }
+        /* It will centered the content of page1 and page2 */
+        
+        #first-page,
+        #second-page {
+            margin-left: 25%;
+            margin-top: 25%;
+            text-align: center;
+            height: 50%;
+            width: 50%;
+        }
+        /* sets the height and width of all the img */
+        
+        img {
+            height: 90%;
+            width: 90%;
+        }
+        /* decrese the height and width when hover in page2 */
+        
+        #second-page:hover {
+            width: 70%;
+            height: 70%;
+        }
+        
+        td {
+            border: 1px solid rgb(82, 82, 79);
+        }
+        
+        table {
+            width: 80%;
+            margin-left: 2%;
+        }
+        
+        h1,
+        h4,
+        h2,
+        p1 {
+            text-align: center;
+        }
+        
+        #luffyPic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* sets height and width of img to 50% in page4 
+overriding 90% above */
+        
+        #luffyPic>img {
+            width: 50%;
+            height: 50%;
+        }
+        /* adds the linearGradient in page4  */
+        
+        #onepieceSummary {
+            background: linear-gradient(to bottom, #70655d, #ffcc00);
+            border-radius: 10px;
+            box-shadow: #f0edea;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* This sets the font, color and font size in page4 first paragraph*/
+        
+        #onepieceSummary>p1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(106, 227, 227);
+            font-size: 30px;
+        }
+        /* adds the border in second paragraph in page4 */
+        
+        #secSummary {
+            color: rgb(164, 188, 188);
+            text-shadow: 1px 1px lightgreen;
+            border: 2px solid red;
+        }
+        /* This sets the font and font size in page4 second paragraph*/
+        
+        #secSummary>p1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        /* centers all the elements in page5 */
+        
+        .cointainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cointainer>img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        /* when hover it will reduce size to 30% each */
+        
+        .cointainer>img:hover {
+            height: 30%;
+            width: 30%;
+        }
+        
+        .fdiv>h1 {
+            font-size: 70px;
+        }
+        
+        .fdiv>.sdiv:nth-child(2) {
+            font-size: 50px;
+            color: green;
+        }
+        /* it will change the button color to red when hover */
+        
+        button:hover {
+            color: red;
+        }
+        /* Assignment 6 */
+        
+        .box1 {
+            background-color: rgb(232, 112, 112);
+            height: 30vh;
+            width: 30vh;
+            max-width: 40vh;
+            max-height: 40vh;
+            min-width: 15px;
+            min-height: 15px;
+            padding: 10px;
+            margin-right: 10px;
+            margin-left: 30%;
+            margin-top: 20%;
+            position: relative;
+            border-style: solid;
+            border-width: 5px;
+        }
+        
+        .box1:hover {
+            z-index: 1;
+            background-color: aqua;
+        }
+        
+        .box2 {
+            background-color: green;
+            height: 30vh;
+            width: 30vh;
+            max-width: 40vh;
+            max-height: 40vh;
+            min-width: 15px;
+            min-height: 15px;
+            padding: 10px;
+            margin-top: -20%;
+            margin-left: 40%;
+            position: fixed;
+            border-style: solid;
+            border-width: 5px;
+        }
+        /* Assignment 7 */
+        /* Navbar styling 
+ Media query for responsive design */
+        
+        .flexbox-setup {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        
+        .flexbox-setup>div {
+            background-color: rgba(210, 82, 82, 0.8);
+            border: 1px solid;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        @media(max-width: 600px) {
+            .flexbox-setup {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: space-between;
+                overflow: scroll;
+            }
+            .flexbox-setup>div {
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        /* Assignment 8 */
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: rgba(97, 91, 91, 0.418);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: rgb(245, 218, 218);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
